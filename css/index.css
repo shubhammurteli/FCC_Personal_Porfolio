@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300&family=Lobster&family=Roboto+Mono:ital,wght@1,100&display=swap');
+
+/* Custom Variables */
+:root{
+    --heading-font: 'Roboto Mono', monospace;
+    --secondary-font: 'Bellota', cursive;
+    --para-font: 'Lobster', cursive;
+}
+
+/* Reset Everything */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body{
+    background-color: black;
+    color: white;
+}
+
+/* Nav bar Styling */
+#nav-bar{
+    background-color: blue;
+    font-family: var(--secondary-font);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 3.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#nav-bar ul{
+    display: flex;
+}
+
+#nav-bar ul li{
+    list-style: none;
+}
+
+#nav-bar ul li a{
+    text-decoration: none;
+    color: yellow;
+    margin: 0px 10px;
+    padding: 13px 15px;
+}
+#nav-bar ul li a:hover{
+    background: rgba(128, 128, 128,0.6);
+}
+/* Partitions  */
+.item{
+    height: 100vh;
+}
+
+/* About Section Styling */
+.welcome{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--heading-font);
+    color: red;
+}
+.welcome h1{
+    font-size: 4rem;
+    text-shadow: -2px 4px 4px red;
+}
+.welcome h3{
+    font-size: 2.5rem;
+    color: blue;
+    text-shadow: -2px 4px 4px blue;
+
+}
+
+.welcome .highlight{
+    color: white;
+    text-shadow: -2px 4px 4px white;
+
+}
+/* Projects Section Styling */
+.project{
+    font-family: var(--secondary-font);
+    color: blue;
+}
+.project h2{
+    padding: 3.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: underline white;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    color: orange
+}
+.cards{
+    border: 1px solid red;
+    margin: 2px 20px;
+    height: 60vh;
+    width: 50vh;
+    text-align: center;
+}
+img{
+    width: 49vh;
+    height: 40vh;
+}
+.cards h3{
+    margin: 33px 10px;
+    font-size: 3rem;
+}
+
+/* Contact Styling */
+#contact{
+    margin-top: 3.5rem;
+    /* color: darkblue; */
+}
+#contact h2{
+    text-align: center;
+    padding-top: 3.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: var(--secondary-font);
+    /* text-decoration: underline white; */
+}
+.contacts{
+    /* border: 1px solid white; */
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+}
+.contacts img{
+    height: 150px;
+    width: 150px;
+    filter: invert();
+    margin: 20px 0px;
+}
+.contacts img:hover{
+    cursor: pointer;
+}
