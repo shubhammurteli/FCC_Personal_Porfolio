@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300&family=Lobster&family=Roboto+Mono:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300&family=Roboto+Mono:ital,wght@1,100&family=Satisfy&display=swap');
 
 /* Custom Variables */
 :root{
     --heading-font: 'Roboto Mono', monospace;
     --secondary-font: 'Bellota', cursive;
-    --para-font: 'Lobster', cursive;
+    --para-font: 'Satisfy', cursive;
 }
 
 /* Reset Everything */
@@ -16,7 +16,7 @@
 
 /* Body Styling */
 body{
-    background-color: black;
+    background-color: #262626;
     color: white;
 }
 
@@ -27,7 +27,7 @@ body{
     font-weight: bolder;
     font-size: 1.5rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 3.5rem;
     position: fixed;
@@ -56,6 +56,14 @@ body{
 /* Partitions  */
 .item{
     height: 100vh;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+#logo{
+    height: 60px;
+    width: 60px;
 }
 
 /* About Section Styling */
@@ -92,7 +100,7 @@ body{
     padding: 3.5rem;
     font-size: 2.5rem;
     text-align: center;
-    text-decoration: underline white;
+    color: white;
 }
 
 .card-container{
@@ -102,7 +110,7 @@ body{
     color: orange
 }
 .cards{
-    border: 1px solid red;
+    border: 1px solid white;
     margin: 2px 20px;
     height: 60vh;
     width: 50vh;
@@ -126,17 +134,16 @@ img{
     text-align: center;
     padding-top: 3.5rem;
     font-size: 2.5rem;
-    text-align: center;
     font-family: var(--secondary-font);
     /* text-decoration: underline white; */
 }
 .contacts{
     /* border: 1px solid white; */
-    margin: 30px;
     display: flex;
+    padding: 15vh;
     justify-content: space-evenly;
     align-items: center;
-    height: 70vh;
+    /* height: 70vh; */
 }
 .contacts img{
     height: 150px;
@@ -146,4 +153,17 @@ img{
 }
 .contacts img:hover{
     cursor: pointer;
+}
+.text{
+    margin: 0px auto;
+    height: 60px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    font-family: var(--para-font);
+}
+#text{
+    font-weight: normal;
 }
