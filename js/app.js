@@ -8,27 +8,22 @@ logo.forEach(function (pic) {
   pic.addEventListener("mouseover", function(e) {
     const clicked = e.currentTarget.id; //gives the id of the element which triggered the event
   if (clicked == "twitter") {
-    cleartext(text[0]);
+    display.innerHTML = text[0]
   }
   else if (clicked == "instagram") {
-      cleartext(text[1]); 
+    display.innerHTML = text[1]
+    cleartext(text[1]); 
   }
   else if (clicked == "codepen") {
-      cleartext(text[2]);
+    display.innerHTML = text[2]
+    cleartext(text[2]);
   }
   else if (clicked == "github") {
-      cleartext(text[3]);
+    display.innerHTML = text[3]
+    cleartext(text[3]);
   }
   else {
-      cleartext(text[4]);
+    display.innerHTML = text[4]
   }
   });
 });
-
-function cleartext(a) {
-  clearTimeout(clear);
-  display.innerHTML = a;
-  var clear = setTimeout(() => {
-      display.innerHTML = "Hover again";
-  }, 5000);
-}
