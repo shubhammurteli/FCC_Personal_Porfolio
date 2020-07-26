@@ -12,6 +12,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* Body Styling */
@@ -49,9 +50,6 @@ body{
     color: yellow;
     margin: 0px 10px;
     padding: 13px 15px;
-}
-#nav-bar ul li a:hover{
-    background: rgba(128, 128, 128,0.6);
 }
 /* Partitions  */
 .item{
@@ -117,13 +115,13 @@ body{
     text-align: center;
 }
 img{
-    width: 49vh;
+    width: 100%;
     height: 40vh;
 }
-.cards h3, .cards a{
+.cards h3{
     color: orange;
     text-decoration: none;
-    margin: 33px 10px;
+    margin: 36px 10px;
     font-size: 3rem;
 }
 
